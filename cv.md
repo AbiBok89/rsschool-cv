@@ -1,4 +1,3 @@
-# [RS School-cv](https://abibok89.github.io/rsschool-cv/)
 # Viachalau Rybalka
 
 ##  My Contact Info:
