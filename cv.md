@@ -31,4 +31,11 @@ function myFunction() {
 }
 </script>
 ```
+## Education
+- Belarusian Trade and Economics University of Consumer Cooperatives
+    - Management (Social-Administrative) 
 
+## Languages
+* Russian - Native speaker
+* Belarussian - Native speaker
+* English - A1 (Reading Technical Documentation)
