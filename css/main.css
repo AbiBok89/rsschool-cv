@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* General */
+
+body {
+    background-color: #101113;
+    color: #fff;
+}
+
+.header {}
+
+
+
+
+/* Navigation */
+.container-nav {
+    background-color: #1E1E1E;
+}
+
+.header-nav {
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 100px;
+    padding: 30px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: 45px;
+}
+
+li.nav-bar {
+    display: inline-block;
+    margin-right: 45px;
+}
+
+a.header-nav-text0 {
+    color: #E1E1DF;
+    font-weight: 600;
+    font-size: 21px;
+    text-decoration: underline 2px #FEDA0A;
+    transition: all 0.5s ease;
+}
+
+a.header-nav-text0:hover {
+    text-decoration-color: rgb(91, 185, 228);
+}
+
+a.header-nav-text1 {
+    color: #878787;
+    font-size: 21px;
+    font-weight: 400;
+    transition: all 0.5s ease;
+}
+
+a.header-nav-text1:hover {
+    text-decoration: underline 2px rgb(91, 185, 228)
+}
+
+a.header-btn-talk {
+    font-size: 21px;
+    font-weight: 600;
+    color: #000;
+    background-color: #6D6D6D;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+a.header-btn-talk:hover {
+    background-color: #FEDA0A;
+}
+
+/* About Me */
