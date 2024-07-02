@@ -203,3 +203,21 @@ div.header-about-text {
     font-size: 23px;
 }
 
+/*  Code example */
+.main-code-example {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.code-example-name{
+    font-weight: 700;
+    font-size: 52px;
+    text-align: center;
+    padding-bottom: 55px;
+}
+
+.code-example {
+    font-weight: 400;
+    font-size: 14px;
+    color: #878787;
+}

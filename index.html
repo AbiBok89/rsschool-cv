@@ -68,14 +68,16 @@
                         <img class="icon-school" src="./img/Logo/school.png" alt="school">
                         <p class="education-block-name">Colledge</p>
                         <p class="education-block-text">
-                            Branch of the Educational Institution "BTEUСС" "Mogilev Trade College" <br><br>Marketing <br><br>2015/2017
+                            Branch of the Educational Institution "BTEUСС" "Mogilev Trade College" <br><br>Marketing
+                            <br><br>2015/2017
                         </p>
                     </li>
                     <li class="education-block">
                         <img class="icon-school" src="./img/Logo/school.png" alt="school">
                         <p class="education-block-name">Universitat</p>
                         <p class="education-block-text">
-                            Belarusian Trade and Economic University of Consumer Cooperation  <br><br>Managment S/A <br><br>2017/2020
+                            Belarusian Trade and Economic University of Consumer Cooperation <br><br>Managment S/A
+                            <br><br>2017/2020
                         </p>
                     </li>
                     <li class="education-block">
@@ -89,10 +91,45 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="main-code-example">
+            <h2 class="code-example-name">Code Example</h2>
 
+                <pre>
+                    <code class="code-example">
+                        function decode(expr) {
+                        const splitedExpr = expr.split('');
+                        let stash = [];
+                        let result = [];
+                        
+                        function recursion(startIndex, endIndex) {
+                        stash = [];
+                        
+                        if (startIndex === expr.length) return;
+                        
+                        for (let i = startIndex; i < endIndex; i=i + 2) { if (splitedExpr[i] + splitedExpr[i + 1]==='10' ) stash.push('.'); if
+                                (splitedExpr[i] + splitedExpr[i + 1]==='11' ) stash.push('-'); if (splitedExpr[i]==='*' ) { result.push(' ');
+                                    return recursion(startIndex + 10, endIndex + 10);
+                                    }
+                                } 
+                                for (key in MORSE_TABLE) {
+                                    if (key === stash.join('')) {
+                                    result.push(MORSE_TABLE[key]);
+                                    } 
+                                }
+                                recursion(startIndex + 10, endIndex + 10);
+                            }
+                                
+                            recursion(0, 10);
+                                
+                            return result.join('');
+                        }
+                            
+                    </code>
+                </pre>
         </div>
 
-
+        
     </main>
 
     <footer>
