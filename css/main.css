@@ -75,3 +75,72 @@ a.header-btn-talk:hover {
 }
 
 /* About Me */
+
+.header-about {
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 472px;
+    padding: 30px 70px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+div.header-about-text {
+    text-align: left;
+
+
+}
+
+.header-about-h1 {
+    font-weight: 700;
+    font-size: 44px;
+    width: 650px;
+    height: 170px;
+    padding: 26px 50px 50px 0;
+}
+
+.header-about-name {
+    color: #FEDA0A;
+}
+
+.header-about-h2 {
+    color: #878787;
+    font-weight: 400;
+    font-size: 17px;
+    width: 600px;
+    height: 100px;
+}
+
+.header-about-name0 {
+    color: #a7a6a6;
+    font-weight: 700;
+}
+
+/* skills */
+
+.main-skills {
+    background-color: #000;
+
+    height: 85px;
+
+}
+
+.skills {
+    margin: 0 auto;
+    padding: 30px 70px;
+    max-width: 1250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill {
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 26px;
+    list-style-image: url(/rsschool-cv/img/Logo/star.png);
+    
+}
+
+/* */
