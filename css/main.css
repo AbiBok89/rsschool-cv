@@ -110,6 +110,7 @@ div.header-about-text {
     font-size: 17px;
     width: 600px;
     height: 100px;
+    margin-bottom: 50px;
 }
 
 .header-about-name0 {
@@ -143,4 +144,62 @@ div.header-about-text {
     
 }
 
-/* */
+
+
+/* Education */
+
+.main-education {
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 50px 70px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-between; */
+}
+
+.Education-h2 {
+    font-weight: 700;
+    font-size: 52px;
+    text-align: center;
+    padding-bottom: 55px;
+}
+
+.education-blocks {
+    display: flex;
+
+    
+}
+
+.education-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: #878787;
+    display: flex;
+    width: 330px;
+    height: 330px;
+    margin-left: auto;
+    border: 5px solid #878787;
+    border-radius: 10px;
+}
+
+.icon-school {
+    margin: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.education-block-name {
+
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.education-block-text {
+    margin: 15px;
+    font-size: 23px;
+}
+
