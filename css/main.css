@@ -7,9 +7,9 @@ body {
     color: #fff;
 }
 
-.header {}
-
-
+.header {
+    color: #fff;
+}
 
 
 /* Navigation */
@@ -141,7 +141,7 @@ div.header-about-text {
     font-weight: 500;
     font-size: 26px;
     list-style-image: url(/rsschool-cv/img/Logo/star.png);
-    
+
 }
 
 
@@ -167,7 +167,7 @@ div.header-about-text {
 .education-blocks {
     display: flex;
 
-    
+
 }
 
 .education-block {
@@ -209,7 +209,7 @@ div.header-about-text {
     max-width: 1300px;
 }
 
-.code-example-name{
+.code-example-name {
     font-weight: 700;
     font-size: 52px;
     text-align: center;
@@ -220,4 +220,48 @@ div.header-about-text {
     font-weight: 400;
     font-size: 14px;
     color: #878787;
+}
+
+/* Portfolio */
+
+.portfolio {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.portfolio-h2 {
+    font-weight: 700;
+    font-size: 52px;
+    padding-bottom: 55px;
+    text-align: center;
+}
+
+.portfolio-block {
+    margin-bottom: 60px;
+}
+
+.portfolio-img {
+    text-align: center;
+}
+.portfolio-img>img {
+    max-width: 900px;
+    height: auto;
+    border: 6px #FEDA0A solid;
+    border-radius: 25px;
+}
+
+.portfolio-text {
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 23px;
+    transition: all 0.5s ease;
+}
+.portfolio-text>a {
+    color: #878787;
+}
+
+
+.portfolio-text:hover {
+    text-decoration: underline 2px #FEDA0A;
 }

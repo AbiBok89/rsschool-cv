@@ -38,9 +38,9 @@
                     (front-end) developer.</h1>
                 <h2 class="header-about-h2">Hello, I'm <b class="header-about-name0">Vyacheslav Rybalko</b>, a Web
                     (front-end) developer from Belarus.
-                    I have more than one year of experience in designing websites and apps. I've got certificates from
-                    Google, and I've
-                    worked on creating and improving many websites and apps on my own.</h2>
+                    I am 26 years old and work in the energy sector. I want to start doing what I like most and develop
+                    constantly. My goal
+                    is to first become a Full-stack developer and then move <br> to the Backend.</h2>
                 <a href="" class="header-btn-talk">About me.</a>
             </div>
             <div class="header-about-img">
@@ -95,41 +95,74 @@
         <div class="main-code-example">
             <h2 class="code-example-name">Code Example</h2>
 
-                <pre>
+            <pre>
                     <code class="code-example">
-                        function decode(expr) {
-                        const splitedExpr = expr.split('');
-                        let stash = [];
-                        let result = [];
-                        
-                        function recursion(startIndex, endIndex) {
-                        stash = [];
-                        
-                        if (startIndex === expr.length) return;
-                        
-                        for (let i = startIndex; i < endIndex; i=i + 2) { if (splitedExpr[i] + splitedExpr[i + 1]==='10' ) stash.push('.'); if
-                                (splitedExpr[i] + splitedExpr[i + 1]==='11' ) stash.push('-'); if (splitedExpr[i]==='*' ) { result.push(' ');
-                                    return recursion(startIndex + 10, endIndex + 10);
+                            // Use this function to access the current TM1 Web object
+                            function getActiveWidget() {
+                                return dijit.byId("tabContainer").selectedChildWidget;
+                            };
+
+                            // Rebuild the active form in a Websheet
+                            // ----------------------
+                            function rebuildActiveForms() {
+                                loadedWebsheet.rebuildActiveForms().then(
+                                    function () {
+                                        console.debug("Active form rebuild completed.");
+                                    },
+                                    function (message) {
+                                        console.error(message);
                                     }
-                                } 
-                                for (key in MORSE_TABLE) {
-                                    if (key === stash.join('')) {
-                                    result.push(MORSE_TABLE[key]);
-                                    } 
-                                }
-                                recursion(startIndex + 10, endIndex + 10);
-                            }
-                                
-                            recursion(0, 10);
-                                
-                            return result.join('');
-                        }
+                                );
+                            };
+
+
+                            // Recalculate a Websheet
+                            // ----------------------
+                            function recalculate() {
+                                getActiveWidget().recalculate().then(
+                                    function () {
+                                        console.debug("Recalculate completed successfully.");
+                                    },
+                                    function (message) {
+                                        console.error(message);
+                                    }
+                                );
+                            };
+
+                            // Set the AutoRecalcMode for a CubeViewer object
+                            // ----------------------
+                            function toggleAutoRecalcMode(enabled) {
+                                loadedCubeview.set("automaticRecalculation", enabled).then(
+                                    function () {
+                                        var message = enabled ?
+                                            "Enabling auto recalc completed successfully." :
+                                            "Disabling auto recalc completed successfully.";
+                                        console.debug(message);
+                                    },
+                                    function (message) {
+                                        console.error(message);
+                                    }
+                                );
+                            };
                             
                     </code>
                 </pre>
         </div>
 
-        
+        <div class="portfolio">
+            <h2 class="portfolio-h2">Portfolio</h2>
+            <div class="div-portfolio-blocks">
+                <ul class="portfolio-blocks">
+                    <li class="portfolio-block">
+                        <p class="portfolio-img"><img src="./img/Portfolio/portfolio-01.png" alt="My First project"></p>
+                        <p class="portfolio-text"><a href="https://abibok89.github.io/rsschool-cv/">My First project
+                                it's my portfolio</a></p>
+                    </li>
+                    <!-- New portfolio pages  -->
+
+                </ul>
+            </div>
+        </div>
     </main>
 
     <footer>
