@@ -4,11 +4,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>My CV</title>
 </head>
 
 <body>
+    <header class="header">
+        <div class="container-nav">
+            <nav class="header-nav">
+                <img class="logo" id="Home" src="./img/Logo/Logo.svg" alt="Logo">
+                <ul>
+                    <li class="nav-bar">
+                        <a class="header-nav-text0" href="#home">Home</a>
+                    </li>
+                    <li class="nav-bar">
+                        <a class="header-nav-text1" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-bar">
+                        <a class="header-nav-text1" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <a class="header-btn-talk" href="https://t.me/AbiBok89">Let's Talk</a>
+            </nav>
+        </div>
 
+        <div class="header-about">
+            <div class="header-about-text">
+                <h1 class="header-about-h1">HEY, I’M <b class="header-about-name">Vyacheslav Rybalko</b>, A Web
+                    (front-end) developer.</h1>
+                <h2 class="header-about-h2">Hello, I'm <b class="header-about-name0">Vyacheslav Rybalko</b>, a Web
+                    (front-end) developer from Belarus.
+                    I am 26 years old and work in the energy sector. I want to start doing what I like most and develop
+                    constantly. My goal
+                    is to first become a Full-stack developer and then move <br> to the Backend.</h2>
+                <a href="" class="header-btn-talk">About me.</a>
+            </div>
+            <div class="header-about-img">
+                <img src="./img/photo.png" alt="Me Photo">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-skills">
+            <ul class="skills">
+                <li class="skill">Web (front-end)</li>
+                <li class="skill">HTML, CSS</li>
+                <li class="skill">Git, GitHub</li>
+                <li class="skill">Figma / Photoshop</li>
+            </ul>
+        </div>
+
+        <div class="main-education">
+            <h2 class="Education-h2">Education</h2>
+
+            <div class="div-education-blocks">
+                <ul class="education-blocks">
+                    <li class="education-block">
+                        <img class="icon-school" src="./img/Logo/school.png" alt="school">
+                        <p class="education-block-name">Colledge</p>
+                        <p class="education-block-text">
+                            Branch of the Educational Institution "BTEUСС" "Mogilev Trade College" <br><br>Marketing
+                            <br><br>2015/2017
+                        </p>
+                    </li>
+                    <li class="education-block">
+                        <img class="icon-school" src="./img/Logo/school.png" alt="school">
+                        <p class="education-block-name">Universitat</p>
+                        <p class="education-block-text">
+                            Belarusian Trade and Economic University of Consumer Cooperation <br><br>Managment S/A
+                            <br><br>2017/2020
+                        </p>
+                    </li>
+                    <li class="education-block">
+                        <img class="icon-school" src="./img/Logo/school.png" alt="school">
+                        <p class="education-block-name">Level Language</p>
+                        <p class="education-block-text">
+                            * Russian - Native speaker
+                            <br>* Belarussian - Native speaker
+                            <br>* English - A1 (Tech/Doc)
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-code-example">
+            <h2 class="code-example-name">Code Example</h2>
+
+            <pre>
+                    <code class="code-example">
+                            // Use this function to access the current TM1 Web object
+                            function getActiveWidget() {
+                                return dijit.byId("tabContainer").selectedChildWidget;
+                            };
+
+                            // Rebuild the active form in a Websheet
+                            // ----------------------
+                            function rebuildActiveForms() {
+                                loadedWebsheet.rebuildActiveForms().then(
+                                    function () {
+                                        console.debug("Active form rebuild completed.");
+                                    },
+                                    function (message) {
+                                        console.error(message);
+                                    }
+                                );
+                            };
+
+
+                            // Recalculate a Websheet
+                            // ----------------------
+                            function recalculate() {
+                                getActiveWidget().recalculate().then(
+                                    function () {
+                                        console.debug("Recalculate completed successfully.");
+                                    },
+                                    function (message) {
+                                        console.error(message);
+                                    }
+                                );
+                            };
+
+                            // Set the AutoRecalcMode for a CubeViewer object
+                            // ----------------------
+                            function toggleAutoRecalcMode(enabled) {
+                                loadedCubeview.set("automaticRecalculation", enabled).then(
+                                    function () {
+                                        var message = enabled ?
+                                            "Enabling auto recalc completed successfully." :
+                                            "Disabling auto recalc completed successfully.";
+                                        console.debug(message);
+                                    },
+                                    function (message) {
+                                        console.error(message);
+                                    }
+                                );
+                            };
+                            
+                    </code>
+                </pre>
+        </div>
+
+        <div    id="portfolio" class="portfolio">
+            <h2 class="portfolio-h2">Portfolio</h2>
+            <div class="div-portfolio-blocks">
+                <ul class="portfolio-blocks">
+                    <li class="portfolio-block">
+                        <p class="portfolio-img"><img src="./img/Portfolio/portfolio-01.png" alt="My First project"></p>
+                        <p class="portfolio-text"><a href="https://github.com/AbiBok89/rsschool-cv/blob/rsschool-cv-html/index.html">My First project
+                                it's my portfolio</a></p>
+                    </li>
+                    <!-- New portfolio pages  -->
+
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-blocks">
+            <div class="footer-block-rs">
+                <a href="https://rs.school/courses/javascript-preschool-ru">
+                    <img class="rs-img" src="./img/Logo/rs.svg" alt="RS School">
+                </a>
+            </div>
+            <div class="footer-block-year">2024</div>
+            <div    id="contact" class="footer-block-contact">
+                <ul class="footer-contacts">
+                    <li class="footer-contact">
+                        <a href="tel:+375295738901" class="contact-Phone"><img src="./img/Logo/phone.svg" alt="Phone" class="phone-img"></a>
+                    </li>
+                    <li class="footer-contact">
+                        <a href="mailto:goggler891@gmail.com" class="contact-Email"><img src="./img/Logo/email.svg" alt="Email" class="email-img"></a>
+                    </li>
+                    <li class="footer-contact">
+                        <a href="https://github.com/AbiBok89" class="contact-Git"><img src="./img/Logo/github.svg" alt="GitHub" class="github-img"></a>
+                    </li>
+                    <li class="footer-contact">
+                        <a href="https://t.me/AbiBok89" class="contact-telegram"><img src="./img/Logo/telegram.svg" alt="Telegram" class="telegram-img"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
-
 </html>
