@@ -243,6 +243,7 @@ div.header-about-text {
 .portfolio-img {
     text-align: center;
 }
+
 .portfolio-img>img {
     max-width: 900px;
     height: auto;
@@ -257,6 +258,7 @@ div.header-about-text {
     font-size: 23px;
     transition: all 0.5s ease;
 }
+
 .portfolio-text>a {
     color: #878787;
 }
@@ -264,4 +266,38 @@ div.header-about-text {
 
 .portfolio-text:hover {
     text-decoration: underline 2px #FEDA0A;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #1E1E1E;
+
+}
+
+.footer-blocks {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    margin: 0 auto;
+    max-width: 1300px
+}
+
+.footer-block-rs {
+    width: 150px;
+    height: auto;
+}
+
+.footer-block-year{
+    color: #878787;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+
+.footer-contacts {
+    justify-content: space-evenly;
+    width: 50px;
+    height: auto;
 }
