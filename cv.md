@@ -19,7 +19,7 @@ I am 28 years old and work in the energy sector.  I want to start doing what I l
     - CorelDRAW
     - Figma
 
-    ## Code Examples
+## Code Examples
 ```css   
 <script>
 function myFunction() {
