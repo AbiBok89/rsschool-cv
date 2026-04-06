@@ -275,6 +275,11 @@ body{
 
 .portfolio-items{
   max-width: 400px;
+  transition: 0.3s;
+}
+
+.portfolio-items:hover {
+  box-shadow:0 4px 12px rgb(241, 238, 238);;
 }
 
 .footer{
@@ -289,7 +294,7 @@ body{
 .footer-rsimg{
   display: flex;
   height: 50px;
-  width: 130px;
+  width: 135px;
 }
 
 .footer-git{
